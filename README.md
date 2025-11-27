@@ -139,11 +139,33 @@ Example: fix: resolve audio concatenation issue
 ### Scripts
 
 ```bash
-npm run dev      # Start dev server with hot reload
-npm run build    # Build for production
-npm run preview  # Preview production build
-npm run lint     # Run ESLint
+npm run dev           # Start dev server with hot reload
+npm run build         # Build for production
+npm run preview       # Preview production build
+npm run lint          # Run ESLint
+npm test              # Run tests in watch mode
+npm run test:run      # Run tests once
+npm run test:ui       # Open Vitest UI
+npm run test:coverage # Generate test coverage report
 ```
+
+### Testing
+
+This project uses [Vitest](https://vitest.dev/) for unit testing with React Testing Library for component tests.
+
+Run tests:
+```bash
+npm test              # Watch mode
+npm run test:run      # Single run
+npm run test:coverage # With coverage report
+```
+
+Test coverage:
+- Utility functions (text processing, stats, storage, language detection)
+- Service layer (model management, voice services)
+- React components (UI components, progress indicators, error handling)
+
+The project includes GitHub Actions workflow that automatically runs tests on pull requests.
 
 ## Troubleshooting
 

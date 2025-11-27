@@ -21,24 +21,11 @@ const Title = styled.h3`
   color: #f8fafc;
 `
 
-const Description = styled.p`
-  margin: 0.35rem 0 0;
-  font-size: 0.9rem;
-  color: #94a3b8;
-`
-
 const Content = styled.div`
   padding: 1.5rem;
-`
-
-const Footer = styled.div`
-  padding: 1.5rem;
-  border-top: 1px solid rgba(148, 163, 184, 0.15);
 `
 
 export const Card = forwardRef((props, ref) => <BaseCard ref={ref} {...props} />)
 export const CardHeader = forwardRef((props, ref) => <Header ref={ref} {...props} />)
 export const CardTitle = forwardRef((props, ref) => <Title ref={ref} {...props} />)
-export const CardDescription = forwardRef((props, ref) => <Description ref={ref} {...props} />)
 export const CardContent = forwardRef((props, ref) => <Content ref={ref} {...props} />)
-export const CardFooter = forwardRef((props, ref) => <Footer ref={ref} {...props} />)

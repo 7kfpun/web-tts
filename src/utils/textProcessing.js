@@ -15,12 +15,12 @@ function getEffectiveChunkSize(text, baseSize) {
   return baseSize
 }
 
-export function splitIntoSentences(text) {
+function splitIntoSentences(text) {
   const sentences = text.match(/[^.!?]+[.!?]+(?:\s+|$)/g) || [text]
   return sentences.map(s => s.trim()).filter(s => s.length > 0)
 }
 
-export function splitIntoParagraphs(text) {
+function splitIntoParagraphs(text) {
   return text.split(/\n+/).map(p => p.trim()).filter(p => p.length > 0)
 }
 

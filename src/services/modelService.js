@@ -41,18 +41,3 @@ export async function isModelCached(voice) {
     return false
   }
 }
-
-export async function deleteModel(voice) {
-  try {
-    const { modelPath, configPath } = getModelPaths(voice)
-    const modelUrl = HF_BASE + modelPath
-    const configUrl = HF_BASE + configPath
-
-    const cache = await caches.open(CACHE_NAME)
-    await cache.delete(modelUrl)
-    await cache.delete(configUrl)
-  } catch (err) {
-    console.error('Failed to delete model from cache:', err)
-    throw new Error('Failed to delete model')
-  }
-}

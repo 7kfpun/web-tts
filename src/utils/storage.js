@@ -11,7 +11,7 @@ export function loadDownloadedModels() {
   }
 }
 
-export function saveDownloadedModels(models) {
+function saveDownloadedModels(models) {
   try {
     if (typeof window === 'undefined') return
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...models]))
@@ -22,13 +22,6 @@ export function saveDownloadedModels(models) {
 
 export function addDownloadedModel(models, modelKey) {
   const newModels = new Set([...models, modelKey])
-  saveDownloadedModels(newModels)
-  return newModels
-}
-
-export function removeDownloadedModel(models, modelKey) {
-  const newModels = new Set([...models])
-  newModels.delete(modelKey)
   saveDownloadedModels(newModels)
   return newModels
 }

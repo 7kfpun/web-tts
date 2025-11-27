@@ -176,8 +176,6 @@ export const useAppStore = create((set, get) => ({
     }
   },
 
-  setAudioResult: (audioResult) => set({ audioResult }),
-
   clearErrors: () => set({ downloadError: null, ttsError: null, voiceError: null }),
 
   setPlaybackRate: (rate) => {

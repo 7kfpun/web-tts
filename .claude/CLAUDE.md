@@ -32,6 +32,7 @@ src/
 ├── services/       # Business logic (API calls, TTS operations)
 ├── utils/          # Pure utility functions
 ├── config/         # Configuration constants
+├── test/           # Test setup and utilities
 └── styles/         # CSS files
 ```
 
@@ -65,8 +66,59 @@ src/
 - Track downloaded models in localStorage for persistence
 - Verify cache integrity on app load
 
+## Testing
+
+### Test Framework
+- **Vitest** for unit and component testing
+- **React Testing Library** for component tests
+- **jsdom** for DOM simulation
+
+### Writing Tests
+- Place test files adjacent to source files with `.test.js` or `.test.jsx` extension
+- Use descriptive test names that explain what is being tested
+- Test both happy paths and edge cases
+- Mock external dependencies (fetch, localStorage, Cache API)
+
+### Test Structure
+```javascript
+import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { render, screen } from '@testing-library/react'
+
+describe('ComponentName', () => {
+  beforeEach(() => {
+    // Setup code
+  })
+
+  it('describes the expected behavior', () => {
+    // Arrange
+    // Act
+    // Assert
+  })
+})
+```
+
+### Running Tests
+```bash
+npm test              # Watch mode
+npm run test:run      # Single run
+npm run test:coverage # Coverage report
+npm run test:ui       # Vitest UI
+```
+
+### Test Coverage Areas
+- **Utility Functions**: text processing, stats, storage, language detection
+- **Services**: model management, voice services (with mocked fetch/cache)
+- **Components**: UI rendering, props handling, user interactions
+
+### CI/CD
+- GitHub Actions runs tests automatically on pull requests
+- Tests must pass before merging
+- Lint and build checks are also enforced
+
 ## When Editing Files
 - Always edit existing files rather than creating new ones
 - Read the file first before making changes
 - Maintain existing code style and patterns
 - Test changes don't break CORS or WASM functionality
+- Run tests after making changes to ensure nothing breaks
+- Add tests for new functionality

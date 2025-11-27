@@ -16,8 +16,3 @@ export function getCharCount(text) {
   if (!text) return 0
   return text.length
 }
-
-export function getCharCountNoSpaces(text) {
-  if (!text) return 0
-  return text.replace(/\s/g, '').length
-}

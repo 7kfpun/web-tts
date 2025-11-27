@@ -97,11 +97,3 @@ function audioBufferToWavBlob(audioBuffer) {
 
   return new Blob([buffer], { type: 'audio/wav' })
 }
-
-export function createPlaylist(audioUrls) {
-  return audioUrls.map((url, index) => ({
-    id: index,
-    url,
-    played: false
-  }))
-}

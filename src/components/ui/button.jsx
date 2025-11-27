@@ -17,13 +17,6 @@ const variantStyles = {
     &:hover {
       background: rgba(148, 163, 184, 0.25);
     }
-  `,
-  ghost: css`
-    background: transparent;
-    color: #94a3b8;
-    &:hover {
-      color: #e2e8f0;
-    }
   `
 }
 
@@ -35,10 +28,6 @@ const sizeStyles = {
   lg: css`
     padding: 1.1rem 1.6rem;
     font-size: 1.05rem;
-  `,
-  sm: css`
-    padding: 0.6rem 1.2rem;
-    font-size: 0.9rem;
   `
 }
 
