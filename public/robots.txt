@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://auroravox.local/sitemap.xml
+Sitemap: https://tts.wahthefox.com/sitemap.xml
