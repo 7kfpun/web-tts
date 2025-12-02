@@ -209,3 +209,96 @@ MIT
 - [Piper TTS Documentation](https://github.com/rhasspy/piper)
 - [piper-wasm](https://www.npmjs.com/package/piper-wasm)
 - [Available Voices](https://huggingface.co/rhasspy/piper-voices/blob/main/voices.json)
+
+---
+
+## Getting Started Guide
+
+### Step 1: Choose Your Voice
+
+Browse through the language and voice options to find the perfect match for your content. Each language offers multiple voice profiles with different characteristics - from formal to casual, male to female voices.
+
+### Step 2: Download the Model
+
+First-time use requires downloading a voice model. This is a one-time process - the model gets cached in your browser for instant access later. Model sizes vary from 10MB to 80MB depending on quality level.
+
+### Step 3: Prepare Your Text
+
+Paste or type your content into the text area. The application handles long texts automatically by breaking them into manageable segments while maintaining natural speech flow.
+
+### Step 4: Generate Speech
+
+Click the "Speak" button and watch the progress indicator as your text transforms into natural-sounding speech. Processing happens entirely in your browser - no data leaves your device.
+
+### Step 5: Play and Enjoy
+
+Listen to the generated audio immediately through the built-in player. Audio is generated in high-quality WAV format for crisp, clear playback.
+
+## Common Use Cases
+
+**📚 Content Creation**
+Generate voiceovers for videos, podcasts, or presentations without recording equipment or voice actors.
+
+**🎓 Learning and Accessibility**
+Convert written materials into audio for auditory learners or users with visual impairments. Practice pronunciation for language learning.
+
+**📖 Personal Audiobooks**
+Transform articles, blog posts, or documents into audio format for listening on-the-go or during commutes.
+
+**🧪 Development and Testing**
+Test voice interfaces, prototype voice-enabled applications, or generate sample audio for demos without external APIs.
+
+**🔒 Privacy-Focused Applications**
+Process sensitive text content without sending data to external servers - everything runs locally in your browser.
+
+## Why Choose Web TTS?
+
+**Complete Privacy**
+Your text never leaves your device. All processing happens locally in your browser using WebAssembly technology.
+
+**Zero Cost**
+No subscriptions, no API fees, no usage limits. Download models once and use them forever, even offline.
+
+**Instant Availability**
+No installation, no sign-up, no configuration. Open the web app and start converting text to speech immediately.
+
+**Open Source Foundation**
+Built on Piper TTS, a proven open-source engine with active development and community support.
+
+**Cross-Platform Compatibility**
+Works on any modern browser - Windows, macOS, Linux, Android, iOS. Same experience everywhere.
+
+**Offline Capability**
+After downloading models, use the application without internet connection. Perfect for travel or restricted networks.
+
+## Frequently Asked Questions
+
+**How much does it cost to use?**
+Web TTS is completely free with no usage limits, subscriptions, or hidden fees. You own the generated audio files outright.
+
+**Can I use the generated audio commercially?**
+Yes, you have full rights to use generated audio for any lawful purpose, including commercial projects, videos, or products.
+
+**What languages are supported?**
+The application supports dozens of languages including English, Spanish, French, German, Italian, Portuguese, Dutch, Russian, Chinese, Japanese, Korean, and many more.
+
+**How large are the voice models?**
+Model sizes range from 10MB (low quality) to 80MB (high quality). You only download models you choose to use.
+
+**Does this work offline?**
+Yes! After downloading voice models, the entire application works offline. Models are cached in your browser permanently.
+
+**Why do I need to download models?**
+Models enable high-quality speech generation. Downloading them once allows for instant, unlimited use without repeated downloads or API calls.
+
+**Is my text data sent to any servers?**
+No. All text processing and speech generation happens locally in your browser. Your content stays completely private.
+
+**Which browsers are supported?**
+Modern browsers with WebAssembly support: Chrome/Edge 92+, Firefox 92+, and Safari 15.2+.
+
+**Can I use multiple voices?**
+Yes! Download as many voice models as you like and switch between them anytime. Each model remains cached for quick access.
+
+**What audio format is generated?**
+Audio is generated as high-quality WAV format for optimal clarity and compatibility.
